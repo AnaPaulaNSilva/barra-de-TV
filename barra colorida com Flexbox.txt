@@ -1,0 +1,40 @@
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
+ 
+function App() {
+  return (
+    <View style={{ flex: 1 }}>
+      <View style={{
+        flexDirection: "row",
+        alignItems: "stretch",
+        flex: 1
+      }}>
+        <View style={{ flex: 2, backgroundColor: "white" }} />
+        <View style={{ flex: 2, backgroundColor: "yellow" }} />
+        <View style={{ flex: 2, backgroundColor: "cyan" }} />
+        <View style={{ flex: 2, backgroundColor: "green" }} />
+        <View style={{ flex: 2, backgroundColor: "pink" }} />
+        <View style={{ flex: 2, backgroundColor: "red" }} />
+        <View style={{ flex: 2, backgroundColor: "blue" }} />
+      </View>
+ 
+      <View style={{
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        alignItems: "stretch",
+        flex: 0.10
+      }}>
+        <View style={{ flex: 1, backgroundColor: "#0b0b64", justifyContent: "center", alignItems: "center" }}>
+        </View>
+        <View style={{ flex: 1, backgroundColor: "white", justifyContent: "center", alignItems: "center" }}>
+        </View>
+        <View style={{ flex: 1, backgroundColor: "purple", justifyContent: "center", alignItems: "center" }}>
+        </View>
+        <View style={{ flex: 2, backgroundColor: "black", justifyContent: "center", alignItems: "center" }}>
+        </View>
+      </View>
+    </View>
+  );
+}
+ 
+export default App;
